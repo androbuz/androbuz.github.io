@@ -1,0 +1,521 @@
+/* Google Fonts CSS Classes */
+.zain-extralight {
+  font-family: "Zain", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.zain-light {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.zain-light2 {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.zain-regular {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.zain-medium {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 44px;
+}
+
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.zain-extrabold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.zain-black {
+  font-family: "Zain", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*Setting up the background*/
+body{
+    background-color: #EBBDB5;
+/*    Second Color: #3D6F88*/
+}
+
+/* Working with the nav */
+body, html, footer {
+    /*removing all the default spacing*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.top-nav {
+   /*Leave some space below*/
+    margin-bottom: 1.3rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.author-info {
+/*display the author info vertically*/
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content:center;
+    gap: 0;
+}
+.myDescr, .myName {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+nav ul{
+/*make the navigation links on one line*/
+    display: block;
+    list-style: none;
+}
+nav li{
+    display: block;
+    float: left;
+}
+nav li a{
+    text-decoration: none;
+    padding-right: 2rem;
+    color: black;
+}
+.nav-links {
+/*position the nav links in the center*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#menu-icon{
+/*positioning the right-most menu icon*/
+    margin-left: auto;
+    height: 5%;
+    width: 5%;
+    padding-top: 3%;
+}
+#main-logo {
+/*the main logo needs to be in the middle*/
+    margin: 0 auto;
+    height: 10%;
+    width: 10%;
+}
+.menu-tabs {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-left: 3rem;
+}
+.menu-tabs li {
+    padding-bottom: 1rem;
+}
+/*add the tab links in menu in a text shadow effect*/
+.menu-tabs a {
+    background: #EBBDB5;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+    color: #3D6F88;
+}
+/*show the accessibility icon initially in white*/
+#accessibility-icon {
+    height: 3%;
+    width: 3%;
+    margin-top: 1.2%;
+}
+/*the resize text icons*/
+#text-resize {
+    display: none;
+    margin-top: 1.2%;
+}
+#text-resize button {
+    color: #3D6F88;
+    margin-top: 1.2%;
+}
+
+/*Main work images*/
+.main-work {
+/*setting up the grid columns for 3 columns*/
+    width: auto;
+    margin-left: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    /*spacing before and after the grid container*/
+    margin-top: 4rem;
+    margin-bottom: 0;
+    border-bottom: 2rem;
+    border-bottom-color: aqua;
+    
+}
+.grid-item {
+    padding: 0;
+    margin: 0;
+}
+.main-work img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*grid items*/
+/*setting all grid items font size*/
+.item-one, .item-two, .item-three, .item-four, .item-five, .item-six {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  aspect-ratio: 512 / 768;
+    /*make them flex with the h2 and change h2 color*/
+    display: flex;
+    flex-direction: column;
+    color: #3D6F88;
+    padding: 0;
+    margin: 0;
+}
+/*setting all grid items h2 to display*/
+.item-one h2, .item-two h2, .item-three h2, .item-four h2, .item-five h2, .item-six h2 {
+  display: none;
+}
+/*setting all grid items img to right size*/
+.item-one img, .item-two img, .item-three img, .item-four img, .item-five img, .item-six img {
+  object-fit: cover;
+    width: 80%;
+    height: 60%;
+    border: 1px outset #3D6F88;
+    margin: 0;
+    -webkit-box-shadow: -6px 6px 33px -1px #000000; 
+    box-shadow: -6px 6px 33px -1px #000000
+}
+
+/*CONTACT PAGE*/
+/*the form section*/
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+/*centering the contact me header text*/
+.contact-header {
+    position: relative;
+    left: 40%;
+}
+/*make the contact labels small and in columns*/
+.contact-info-line {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+/*changing fonts of form labels*/
+.contact-info-line label {
+    font-size: 25px;
+    /*zain regular font*/
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*making sure we see all the label text*/
+.contact-info-line input{
+    width: 100%;
+}
+/*removing default borders on input boxes*/
+.contact-info-line input[type="text"], 
+.contact-info-line input[type="email"],  
+.contact-info-line input[type="text"], 
+.submit-message input[type="submit"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #3D6F88;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+/*the last input can be longer*/
+#the_subject, third-contactitem {
+    width: 90%;
+}
+.contact-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contact-message textarea{
+    background: transparent;
+    border-color: #3D6F88;
+    width: 20rem;
+    height: 10rem;
+}
+/*center the submit button*/
+.submit-message {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.submit-message input[type="submit"] {
+    width: 10%;
+}
+/*leave some space before the footer*/
+section {
+    height: 500px;
+    margin-bottom: 0.5rem;
+}
+
+/*PROFILE*/
+/*the section should be in a row flex*/
+.profile-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+/*my picture in pink background*/
+.profile-bio img {
+    height: 25rem;
+    width: auto;
+}
+/*animated text next to the picture*/
+.profile-text {
+    font-size: 30px;
+}
+#cv-info {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: auto;
+}
+/*the row of each degree or job*/
+.cv-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+/*showing vertically a university and a degree*/
+.cv-function {
+    display: flex;
+    flex-direction: column;
+}
+.cv-row-last {
+    /*adding some padding to leave out some space before border*/
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+/*education, experience titles*/
+.cv-header {
+    margin-left: 5rem;
+}
+/*font sizes*/
+.cv-title, .cv-year {
+    font-size: 20px;
+}
+.cv-details {
+    font-size:  45px;
+}
+.cv-header {
+    font-size: 20px;
+}
+
+/*BLOG*/
+/*for each blog segment*/
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /*some space to the next blog*/
+    margin-bottom: 3rem;
+}
+/*the title*/
+.blog-title {
+    font-size: 2.5rem;
+    color: #3D6F88;
+}
+.blog-content {
+    font-size: 23px;
+}
+.blog-button {
+/*making the button appear at the left*/
+    display: none;
+    margin-left: auto;
+    width: 15%;
+/*styling the button*/
+    background-color:#3D6F88; 
+    font-size: 20px;
+}
+
+/*GAME PAGE*/
+/*make the entire section one row*/
+.image-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*styling the background image*/
+    background-image: url(Images/board_game.jpeg);
+    background-clip: padding-box;
+    background-repeat: space;
+    border: 4px solid black;
+}
+.game-image {
+    height: 25rem;
+}
+/*make the slider not stretch*/
+.left-slider, .right-slider {
+    object-fit: contain;
+}
+.game-text {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+/*make the game title underlined and overly centered*/
+.game-title {
+    display: flex;
+    justify-content: center;
+/*    text-decoration-line: underline;*/
+    font-size: 35px;
+    /*leaving some space*/
+}
+.game-description {
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+/*FOOTER*/
+.contact-icons img{
+/*reducing all icons sizes*/
+    height: 48px;
+    width: 48px;
+}
+.contact-icons {
+    /*centering the contact icons*/
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+}
+.contact-text {
+    /*centering the footer text*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.8rem;
+}
+.contact-headerGroup {
+    background-color: #3D6F88;
+}
+
+/*REPORT PAGE*/
+.report-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: aliceblue;
+}
+/*header in the report*/
+.report-container h1, .report-container h1, .report-container h2, .report-container h3 {
+    color: #333;
+    /*giving the header the zain font*/
+    font-family: "Zain", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0;
+}
+.report-container p, .report-container li{
+    color: #333;
+    /*giving the header the zain font*/
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0;
+}
+/*lists are a little bit on the right*/
+.report-container ul, .report-container ol {
+    margin-left: 20px;
+}
+/*images in the report*/
+.report-container img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+/*making the section small*/
+.report-container section {
+    position: relative;
+    height: auto;
+}
+/*wireframes should be well spaced and in a flex positioning*/
+.wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/*Media Queries for Mobile*/
+@media (max-width: 600px){
+    /*remove the author's long description*/
+    .myDescr {
+        display: none;
+    }
+    /*remove the left margin to fit the screen well*/
+    .main-work {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*adjusting the Accessibility icon to be on same line as other links*/
+    #accessibility-icon {
+        margin-top: 4.5%;
+    }
+    /*adjusting the contact me header*/
+    .contact-header {
+        position: relative;
+        left: 35%;
+    }
+/*changing the profile page to be small*/
+    .profile-bio img {
+        height: 20rem;
+        width: auto;
+        }
+    .profile-bio {
+        width: 100%;
+        }
+    .profile-text {
+        font-size: 20px;
+            }
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hello, I'm Andric Ishami, a game designer based in Canada.">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+<title>Andric Ishami|Game Designer</title>
+</head>
+<body>
+<nav>
+<!--the top navigation that has the author name, an image and menu tab-->
+<div class="top-nav">
+    <div class="author-info">
+        <span class="zain-bold myName">Andric Ishami</span>
+        <span class="zain-light2 myDescr">Game Designer, Character Generalist, Animator</span>
+    </div>
+    <img src="/Images/cartoon_logo_developer.jpeg" alt="cartoon image of someone" id="main-logo">
+    <img src="/Icons/menu_white.png" alt="image of a menu tab" id="menu-icon">
+    <!--menu links that appear when the menu tab is clicked-->
+    <div>
+        <ul class="menu-tabs">
+            <li><a href="/Pages/works.html">Works</a></li>
+            <li><a href="/Pages/blog.html">Blog</a></li>
+            <li><a href="/Pages/contact.html">Contact</a></li>
+        </ul>    
+    </div>
+</div>
+<!--the navigation links that appear in the center of the top section-->
+<div class="nav-links">
+    <ul>
+        <li><a class="zain-light" href="works.html">Works</a></li>
+        <li><a class="zain-light" href="blog.html">Blog</a></li>
+        <li><a class="zain-light" href="contact.html">Contact</a></li>
+    </ul>
+    <!--the accessibility icon and its child buttons hidden by default-->
+    <img id="accessibility-icon" src="/Icons/settings_accessibility_white.png" alt="accessibility icon">
+    <div id="text-resize">
+        <button id="increase-text">A+</button>
+        <button id="decrease-text">A-</button>
+    </div>
+</div>
+</nav>
+    <article>
+        <div class="game-title zain-extrabold">
+                <span>ECHELON OF LEGENDS</span>
+            </div>
+        <div class="image-slider">
+            <img src="/Icons/chevron_left_24dp.png" alt="an image of a board game" class="left-slider">
+            <img src="/Images/board_game.jpeg" alt="an image of a board game" class="game-image">
+            <img src="/Icons/chevron_right_24dp.png" alt="an icon that points right" class="right-slider">
+            </div>
+        <div class="game-text">
+            <div class="game-description zain-light2">
+                <span>An epic strategy game where players assemble legendary heroes, build powerful alliances, and engage in thrilling battles to conquer mystical realms. Unleash unique abilities, develop tactics, and rise through the ranks to become a legend in this captivating adventure.</span>
+            </div>
+        </div>
+    </article>
+<!--loading the scripts at last for this page-->
+<script src="/Scripts/main.js"></script>
+<script src="/Scripts/game.js"></script>
+</body>
+<!-- footer section for the social media icons -->
+<footer>
+    <div class="contact-icons">
+        <a href="https://www.instagram.com"><img class="insta" src="/Icons/instagram_icon.png" alt="Instagram icon"></a>
+        <a href="https://www.linkedin.com"><img class="linkedin" src="/Icons/linkedin_icon.png" alt="Linkedin icon"></a>
+        <a href="https://www.x.com"><img class="twitter" src="/Icons/twitter_icon.png" alt="Twitter icon"></a>
+        <a href="https://www.whatsapp.com"><img class="whatsapp" src="/Icons/whatsapp_icon.png" alt="WhatsApp icon"></a>
+    </div>
+    <div class="contact-text zain-light2">
+    <span>Copyright &copy; Andric Ishami. All rights reserved</span>
+    </div>
+    </footer>
+</html>

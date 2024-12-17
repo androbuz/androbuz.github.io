@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hello, I'm Andric Ishami, a game designer based in Canada.">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+<title>Andric Ishami|Game Designer</title>
+</head>
+<body>
+<nav>
+<!--the top navigation that has the author name, an image and menu tab-->
+<div class="top-nav">
+    <div class="author-info">
+        <span class="zain-bold myName">Andric Ishami</span>
+        <span class="zain-light2 myDescr">Game Designer, Character Generalist, Animator</span>
+    </div>
+    <img src="/Images/cartoon_logo_developer.jpeg" alt="cartoon image of someone" id="main-logo">
+    <img src="/Icons/menu_white.png" id="menu-icon">
+    <!--menu links that appear when the menu tab is clicked-->
+    <div>
+        <ul class="menu-tabs">
+            <li><a href="/Pages/works.html">Works</a></li>
+            <li><a href="/Pages/blog.html">Blog</a></li>
+            <li><a href="/Pages/contact.html">Contact</a></li>
+        </ul>    
+    </div>
+</div>
+<!--the navigation links that appear in the center of the top section-->
+<div class="nav-links">
+    <ul>
+        <li><a class="zain-light" href="works.html">Works</a></li>
+        <li><a class="zain-bold" href="blog.html">Blog</a></li>
+        <li><a class="zain-light" href="contact.html">Contact</a></li>
+    </ul>
+    <!--the accessibility icon and its child buttons hidden by default-->
+    <img id="accessibility-icon" src="/Icons/settings_accessibility_white.png">
+    <div id="text-resize">
+        <button id="increase-text">A+</button>
+        <button id="decrease-text">A-</button>
+    </div>
+</div>
+</nav>
+<!--main section that will hold summaries of blog posts-->
+    <article>
+    <div class="blog-post">
+        <span class="blog-title zain-regular">The Art of Game Design: Beyond Graphics</span>
+        <span class="blog-content zain-light2">Creating a game isn't just about stunning graphics or impressive mechanics. It's about crafting an experience that resonates with players. The art of game design is like painting a canvas with emotions, challenges, and rewards. We aim to immerse players in a world where every decision has weight...</span>
+        <button class="blog-button zain-bold">Read More</button>
+        </div>
+        <div class="blog-post">
+        <span class="blog-title zain-regular">Why Storytelling Matters in Video Games</span>
+        <span class="blog-content zain-light2">Video games are a unique medium for storytelling, blending visuals, audio, and interactivity to create compelling narratives. Unlike movies or books, games let players become part of the story, making choices that impact the world and the characters within it. This level of immersion can create profound emotional connections...</span>
+        <button class="blog-button zain-bold">Read More</button>
+        </div>
+        <div class="blog-post">
+        <span class="blog-title zain-regular">5 Tips for Aspiring Game Developers</span>
+        <span class="blog-content zain-light2">1.Start Small: It’s easy to get excited and plan for a massive game, but start with small projects to learn the ropes.
+2.Learn from Others: Play games critically and read up on game development. There’s a lot to learn from the successes and failures of others...</span>
+        <button class="blog-button zain-bold">Read More</button>
+        </div>
+    </article>
+<!--loading the scripts at last for this page-->
+<script src="/Scripts/main.js"></script>
+<script src="/Scripts/blog.js"></script>
+</body>
+<!-- footer section for the social media icons -->
+<footer>
+    <div class="contact-icons">
+        <a href="https://www.instagram.com"><img class="insta" src="/Icons/instagram_icon.png" alt="Instagram icon"></a>
+        <a href="https://www.linkedin.com"><img class="linkedin" src="/Icons/linkedin_icon.png" alt="Linkedin icon"></a>
+        <a href="https://www.x.com"><img class="twitter" src="/Icons/twitter_icon.png" alt="Twitter icon"></a>
+        <a href="https://www.whatsapp.com"><img class="whatsapp" src="/Icons/whatsapp_icon.png" alt="WhatsApp icon"></a>
+    </div>
+    <div class="contact-text zain-light2">
+    <span>Copyright &copy; Andric Ishami. All rights reserved</span>
+    </div>
+    </footer>
+</html>
